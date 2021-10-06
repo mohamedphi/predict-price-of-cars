@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v9 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet"  href="/static/css/nunito-font.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body class="form-v9">
+	<div class="page-content">
+		<div class="form-v9-content" style="background-image: url('/static/images/form-v9.jpg')">
+			<form class="form-detail" action="/predict" method="GET">
+
+
+
+               {% if predict %}
+				<p style="font-size: 30px;">predicted price is :  <span style="color: rgba(30, 195, 224, 0.534);">{{predict}} </span> EGP	</p>
+				{% endif %}
+				<h2>Registration Form</h2>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="number"  class="input-text" name="model_of_cars" placeholder="model_of_cars" >
+					</div>
+					
+					
+					<div class="form-row">
+						<input type="number"  class="input-text" name="Kilometers_Driven" placeholder="Kilometers_Driven" >
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+						<label for="cars">Owner_Type:</label>
+
+						<select name="Owner_Type" id="cars">
+ 						 <option value="Owner_Type_Fourth_Above">Owner_Type_Fourth_Above</option>
+						  <option value="Owner_Type_Second">Owner_Type_Second</option>
+
+						  <option value="Owner_Type_Third">Owner_Type_Third</option>
+
+ 						 <option value="Owner_Type_First">Owner_Type_First</option>
+
+
+						</select>
+					</div>
+					<div class="form-row">
+						<input type="number"  class="input-text" name="Seats" value="Seats" placeholder="Seats" >
+
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="number"  class="input-text" name="Engine" value="Engine" placeholder="Engine (cc)" >
+
+					</div>
+					
+					
+					<div class="form-row">
+						<input type="number"  class="input-text" name="Mileage" value="Mileage" placeholder="Mileage (km/kg)" >
+
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="number"  class="input-text" name="Power" value="Power"  placeholder="Power (bhp)" >
+
+					</div>
+					
+					
+					<div class="form-row">
+						<label for="cars">Location:</label>
+						
+					<select name="Location" value="Location"  id="cars">
+  						<option value="Location_Bangalore">Location_Bangalore</option>
+ 						 <option value="Location_Chennai" >Location_Chennai</option>
+ 						 <option value="Location_Coimbatore">Location_Coimbatore</option>
+ 						 <option value="Location_Delhi">Location_Delhi</option>
+						  <option value="Location_Hyderabad">Location_Hyderabad</option>
+ 						 <option value="Location_Jaipur">Location_Jaipur</option>
+ 						 <option value="Location_Kochi">Location_Kochi</option>
+ 						 <option value="Location_Kolkata">Location_Kolkata</option>
+						  <option value="Location_Mumbai">Location_Mumbai</option>
+ 						 <option value="Location_Pune">Location_Pune</option>
+						  <option value="Ahmedabad">Ahmedabad</option>
+						  
+						</select>
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+
+		
+	   				<label for="cars">Fuel_Type:</label>
+						
+	   					<select name="Fuel_Type" value="Fuel_Type" id="cars">
+			 				<option value="Diesel">Diesel</option>
+			 				<option value="Electric">Electric</option>
+			 				<option value="LPG">LPG</option>
+						    <option value="Petrol">Petrol</option>
+							<option value="CNG">CNG</option>
+		  				 </select>
+
+					</div>
+					
+					
+					<div class="form-row">
+						<label for="cars">Transmission_Type:</label>
+						
+	   					<select name="Transmission_Type" value="Transmission_Type" id="cars">
+			 				<option value="Manual">Manual</option>
+							 <option value="Automatic">Automatic</option>
+			 				
+		  				 </select>
+					</div>
+				</div>
+
+
+				<div class="form-row-last">
+					<label for="cars">company:</label>
+						
+					<select name="company" value="company" id="cars">
+						
+  						<option value="company_Audi">company_Audi</option>
+ 						 <option value="company_BMW">company_BMW</option>
+ 						 <option value="company_Bentley">company_Bentley</option>
+ 						 <option value="company_Chevrolet">company_Chevrolet</option>
+						  <option value="company_Datsun">company_Datsun</option>
+ 						 <option value="company_Fiat">company_Fiat</option>
+ 						 <option value="company_Force">company_Force</option>
+ 						 <option value="company_Ford">company_Ford</option>
+						  <option value="company_Honda">company_Honda</option>
+ 						 <option value="company_Hyundai">company_Hyundai</option>
+						
+						  <option value="company_ISUZU">company_ISUZU</option>
+ 						 <option value="company_Isuzu">company_Isuzu</option>
+ 						 <option value="company_Jaguar">company_Jaguar</option>
+ 						 <option value="company_Jeep">company_Jeep</option>
+						  <option value="company_Lamborghini">company_Lamborghini</option>
+ 						 <option value="company_Land">company_Land</option>
+ 						 <option value="company_Mahindra">company_Mahindra</option>
+ 						 <option value="company_Maruti">company_Maruti</option>
+						  <option value="company_Mercedes-Benz">company_Mercedes-Benz</option>
+ 						 <option value="company_Mini">company_Mini</option>
+					
+						<option value="company_Mitsubishi">company_Mitsubishi</option>
+						<option value="company_Nissan">company_Nissan</option>
+						<option value="company_Porsche">company_Porsche</option>
+						<option value="company_Renault">company_Renault</option>
+						<option value="company_Skoda">company_Skoda</option>
+						<option value="company_Smart">company_Smart</option>
+						<option value="company_Tata">company_Tata</option>
+						<option value="company_Toyota">company_Toyota</option>
+						<option value="company_Volkswagen">company_Volkswagen</option>
+						<option value="company_Volvo">company_Volvo</option>
+						<option value="company_Ambassador">company_Ambassador</option>
+
+						</select>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="predict" class="register" value="predict">
+
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
